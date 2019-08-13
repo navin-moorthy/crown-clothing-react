@@ -10,7 +10,7 @@ import CartDropDown from "../cart-dropdown/cart-dropdown.component";
 import "./header.styles.scss";
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 
-const Header = ({ currentUser }) => (
+const Header = ({ currentUser, hidden }) => (
   <div className="header">
     <Link to="/">
       <Logo className="logo" />
@@ -33,12 +33,13 @@ const Header = ({ currentUser }) => (
       )}
       <CartIcon />
     </div>
-    <CartDropDown />
+    {hidden ? null : <CartDropDown />}
   </div>
 );
 
-const mapStatetoProps = ({ user }) => ({
-  currentUser: user.currentUser
+const mapStatetoProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+  currentUser,
+  hidden
 });
 
 export default connect(mapStatetoProps)(Header);

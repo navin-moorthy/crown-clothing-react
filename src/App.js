@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 
-import { setCurrentUser } from "./redux/user/user.action";
+import { setCurrentUser } from "./redux/user/user.actions";
 
 import "./App.css";
 
