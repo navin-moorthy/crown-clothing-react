@@ -13,8 +13,6 @@ import {
 } from "../../firebase/firebase.utils";
 
 export function* fetchCollectionAsync() {
-  yield console.log("I am fired");
-
   try {
     const collectionRef = firestore.collection("collections");
     const snapshot = yield collectionRef.get();
@@ -29,7 +27,6 @@ export function* fetchCollectionAsync() {
 }
 
 export function* fetchCollectionsStart() {
-  console.log("1");
   yield takeLatest(
     ShopActionTypes.FETCH_COLLECTIONS_START,
     fetchCollectionAsync
