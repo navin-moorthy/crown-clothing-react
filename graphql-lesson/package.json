@@ -1,7 +1,6 @@
 {
   "name": "crown-clothing",
   "version": "1.0.0",
-  "proxy": "http://localhost:8081",
   "private": true,
   "dependencies": {
     "apollo-boost": "0.4.4",
