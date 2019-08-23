@@ -23,17 +23,15 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.post("/payment", (req, res) => {
-  console.log(req.body);
   const {
     token: { id },
     amount
   } = req.body;
-  console.log(id);
-  console.log(amount);
+
   const body = {
-    source: req.body.token.id,
-    amount: req.body.amount,
-    curreny: "usd"
+    source: id,
+    amount: amount,
+    currency: "usd"
   };
 
   stripe.charges.create(body, (stripeErr, stripeRes) => {
