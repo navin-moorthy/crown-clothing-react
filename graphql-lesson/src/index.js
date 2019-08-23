@@ -13,6 +13,8 @@ import { store, persistor } from "./redux/store";
 import "./index.css";
 import App from "./App";
 
+import { typeDefs, resolvers } from "./graphql/resolvers";
+
 const link = createHttpLink({
   uri: "http://35.154.61.191:8080/graphql"
 });
@@ -21,7 +23,9 @@ const cache = new InMemoryCache();
 
 const client = new ApolloClient({
   link,
-  cache
+  cache,
+  typeDefs,
+  resolvers
 });
 
 client.writeData({
