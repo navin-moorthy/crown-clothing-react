@@ -22,6 +22,29 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+app.post("/payment", (req, res) => {
+  console.log(req.body);
+  const {
+    token: { id },
+    amount
+  } = req.body;
+  console.log(id);
+  console.log(amount);
+  const body = {
+    source: req.body.token.id,
+    amount: req.body.amount,
+    curreny: "usd"
+  };
+
+  stripe.charges.create(body, (stripeErr, stripeRes) => {
+    if (stripeErr) {
+      res.status(500).send({ error: stripeErr });
+    } else {
+      res.status(200).send({ success: stripeRes });
+    }
+  });
+});
+
 app.listen(port, error => {
   if (error) throw error;
   console.log(`Server running on port ${port}`);
