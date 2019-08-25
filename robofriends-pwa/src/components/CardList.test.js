@@ -12,6 +12,6 @@ it("expect to render CardList component", () => {
       email: "john@gmail.com"
     }
   ];
-  const cardComponent = shallow(<CardList robots={mockRobots} />);
-  expect(cardComponent.debug()).toMatchSnapshot();
+  const cardListComponent = shallow(<CardList robots={mockRobots} />);
+  expect(cardListComponent.debug()).toMatchSnapshot();
 });
