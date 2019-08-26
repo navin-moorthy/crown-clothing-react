@@ -1,68 +1,73 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="https://navin-navi.github.io">
+    <img alt="Navin | Logo" src="https://raw.githubusercontent.com/navin-navi/navin-navi.github.io/dev/static/logo.png" width="130" />
+  </a>
+</p>
 
-## Available Scripts
+<p align="center">
+  Crown Clothing React
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  E-Commerce App built using React
+</p>
 
-### `npm start`
+<p align="center">
+  Developed following Complete React Developer Zero To Mastery by @AndreiNeagoie
+</p>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+  <strong>
+  Checkout my site at <a href="https://navin-navi-crown-clothing.herokuapp.com/">Crown Clothing React</a>
+  </strong>
+</p>
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+<p align="center">
+  <a href="https://twitter.com/navin_navi19">
+    <img alt="Twitter: navin_navi19" src="https://img.shields.io/twitter/follow/navin_navi19.svg?style=social" target="_blank" />
+  </a>
+</p>
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🖥 Tech Stack
 
-### `npm run build`
+- Create React App - Frond End
+- Node - Express Back-End
+- Deployed in Heroku
+- Renovate for Dependency updates
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Features
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- Styled using Styled Components
+- State Management - Redux - Saga - Thunk - Reselect(Memo)
+- Firebase DB and Auth
+- Stripe Payment
+- CORS Enable
+- Serve files with Gzip Compression
+- Auto HTTP to HTTPS conversion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project setup
+```
+npm run dev
+```
 
-### `npm run eject`
+### Compiles and hot-reloads for development
+```
+npm run dev
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Compiles and minifies for production
+```
+npm run build
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Thanks
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [Complete React Developer Zero To Mastery](https://www.udemy.com/complete-react-developer-zero-to-mastery/) by [AndreiNeagoie](https://twitter.com/AndreiNeagoie)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<div align="center">
 
-## Learn More
+<sub><sup>Project by <a href="https://github.com/navin-navi"> @Navin Navi</a></sup></sub><small>✌</small>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+</div>
